@@ -1,4 +1,4 @@
-    {
+{
     "name": "mica/composer-library-template",
     "description": "Boilerplate package for creating other packages.",
     "keywords": ["template", "composer", "package"],
@@ -14,11 +14,12 @@
 		"php": ">=7.1"
     },
     "require-dev": {
-		"phpunit/phpunit": "6.*"
+		"phpunit/phpunit": "8"
     },
     "autoload": {
         "psr-4": {
-            "Mica\\Template\\": "src/"
+            "Mica\\Template\\": "src/",
+            "App\\": "app"
         }
     }
 }

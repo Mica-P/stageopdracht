@@ -3,9 +3,9 @@ PHPT runner should support ENV section
 --ENV--
 FOO=bar
 --FILE--
-<?php
+<?php declare(strict_types=1);
 if (isset($_SERVER['FOO'])) {
-    var_dump($_SERVER['FOO']);
+    \var_dump($_SERVER['FOO']);
 }
 ?>
 --EXPECTF_EXTERNAL--

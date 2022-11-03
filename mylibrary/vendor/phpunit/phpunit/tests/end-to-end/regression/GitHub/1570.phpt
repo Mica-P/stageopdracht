@@ -1,9 +1,9 @@
 --TEST--
 https://github.com/sebastianbergmann/phpunit/issues/1570
 --FILE--
-<?php
+<?php declare(strict_types=1);
 $_SERVER['argv'][1] = '--no-configuration';
-$_SERVER['argv'][2] = '--disallow-test-output';
+$_SERVER['argv'][2] = '--disallow-tests-output';
 $_SERVER['argv'][3] = 'Issue1570Test';
 $_SERVER['argv'][4] = __DIR__ . '/1570/Issue1570Test.php';
 
@@ -20,6 +20,8 @@ There was 1 risky test:
 
 1) Issue1570Test::testOne
 This test did not perform any assertions
+
+%s:14
 
 OK, but incomplete, skipped, or risky tests!
 Tests: 1, Assertions: 0, Risky: 1.

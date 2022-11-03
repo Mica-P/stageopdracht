@@ -322,7 +322,7 @@ class Exporter
     /**
      * Determines whether a variable represents a resource, either open or closed.
      *
-     * @param mixed $actual The variable to test.
+     * @param mixed $actual The variable to tests.
      *
      * @return bool
      */
@@ -337,7 +337,7 @@ class Exporter
     /**
      * Determines whether a variable represents a closed resource.
      *
-     * @param mixed $actual The variable to test.
+     * @param mixed $actual The variable to tests.
      *
      * @return bool
      */
